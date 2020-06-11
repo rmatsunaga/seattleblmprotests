@@ -1,5 +1,5 @@
 // Setting up your map
-var mymap = L.map('mapid').setView([47.608013, 	-122.335167], 13);
+var mymap = L.map('mapid').setView([47.608013, 	-122.335167], 12);
 
 // Type of map and attributes of map
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
