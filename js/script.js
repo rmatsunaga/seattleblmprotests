@@ -1,6 +1,5 @@
 // Setting up your map
 var mymap = L.map('mapid').setView([47.608013, 	-122.335167], 12);
-
 // Type of map and attributes of map
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -34,6 +33,7 @@ downtown.addTo(mymap)
 
 var may29 = L.marker([47.6050, -122.3344]).addTo(mymap);
 may29.bindPopup("Protest occurred on May 29th 2020 ");
+may29.bindPopup("Click on me to find out the date of the protest!").openPopup();
 var may31 = L.marker([47.6050, -122.3345]).addTo(mymap);
 may31.bindPopup("Protest occurred on May 31 2020");
 
@@ -100,7 +100,7 @@ may29Id.bindPopup("Protest occurred on May 29 2020");
 // ]).addTo(mymap);
 //
 // // Popups
-// marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+//
 // circle.bindPopup("I am a circle.");
 // polygon.bindPopup("I am a polygon.");
 // var popup = L.popup();
